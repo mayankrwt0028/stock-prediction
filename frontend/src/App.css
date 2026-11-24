@@ -1,0 +1,201 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.header {
+  background: white;
+  padding: 15px 7%;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h2 {
+  margin: 0;
+  color: #2563eb;
+}
+
+.header p {
+  margin: 5px 0 0;
+  color: #666;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+.container h1 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.search-box select {
+  padding: 12px;
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.card,
+.chart-card,
+.empty-message {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.card h2 {
+  margin-bottom: 0;
+}
+
+.chart-card h2 {
+  font-size: 18px;
+}
+
+.error {
+  color: red;
+  background: #fee2e2;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.empty-message {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.empty-message p {
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .price-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box select {
+    width: 100%;
+  }
+}
+
+
+.price-cards {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.prediction-card span {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.prediction-note {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .price-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .price-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.comparison-section {
+  margin-top: 25px;
+}
+
+.comparison-section h3 {
+  margin-top: 30px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+th {
+  background: #f5f5f5;
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 12px;
+  }
+}
