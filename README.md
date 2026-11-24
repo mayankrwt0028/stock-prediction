@@ -1,4 +1,4 @@
-# StockWise India 📈
+# StockWise India 
 
 A stock market analysis and prediction application focused on Indian stocks.
 
